@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f3a847;
+  --color-primary-hover: #f08804;
+  --color-bg-light: #eaeded;
+  --color-surface: #ffffff;
+  --color-text-main: #0f1111;
+  --color-text-muted: #565959;
+  --color-text-link: #007185;
+  --color-border-light: #d5d9d9;
+  --color-amazon-navy: #131921;
+  --color-amazon-nav: #232f3e;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-bg-light text-text-main antialiased selection:bg-primary selection:text-white transition-colors duration-300;
+  }
+}
